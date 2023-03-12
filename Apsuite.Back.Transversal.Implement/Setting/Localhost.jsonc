@@ -1,0 +1,19 @@
+{
+  "ConnectionString": {
+    // Pruebas
+    "Transactional": "data source=localhost;database=PruebaQuala;uid=sa;password=Destiny.2022;MultipleActiveResultSets=True; TrustServerCertificate=True;max pool size=3000;Connection Timeout=5;"
+  },
+  "IsEncrypt": false,
+  "SecretKeyCipher": "ASDLKASNDLAKS848949***-*1DNKJLRJNT5651451541748LERJKNTELRKJNWLKJRNWELRJWERIWHERJLWENRWKLEJRNWECJHBSDCIWEUWIUCBSDCBZMBCKJjEBCIAWEVBREUBVSEIAUE7834B7Q85B029NCKDSJCBKSDJB",
+  "Jwt": {
+    "Lifetime": "36000",
+    "Pubfile": "Certificate/JwtSecirity",
+    "Pvtfile": "Certificate/JwtSecirity.pvt",
+    "Keypass": "14e16951-2c38-404b-beac-d6c998a4573f",
+    "Issuer": "Apsuite.Back.Service.Security",
+    "Audience": [
+      "Apsuite.Back.Service.Security"
+    ]
+  },
+  "PathUpload": "C:\\Document_TuAp\\"
+}

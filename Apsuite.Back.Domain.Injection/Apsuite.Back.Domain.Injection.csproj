@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Apsuite.Back.Domain.Contract\Apsuite.Back.Domain.Contract.csproj" />
+    <ProjectReference Include="..\Apsuite.Back.Domain.Implement\Apsuite.Back.Domain.Implement.csproj" />
+    <ProjectReference Include="..\Apsuite.Back.Infrastructure.Injection\Apsuite.Back.Infrastructure.Injection.csproj" />
+  </ItemGroup>
+
+</Project>

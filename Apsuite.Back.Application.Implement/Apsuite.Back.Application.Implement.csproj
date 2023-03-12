@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Apsuite.Back.Application.Contract\Apsuite.Back.Application.Contract.csproj" />
+    <ProjectReference Include="..\Apsuite.Back.Domain.Contract\Apsuite.Back.Domain.Contract.csproj" />
+    <ProjectReference Include="..\Apsuite.Back.Transversal.Contract\Apsuite.Back.Transversal.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

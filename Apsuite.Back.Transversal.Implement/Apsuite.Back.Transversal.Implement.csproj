@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\Apsuite.Back.Transversal.Contract\Apsuite.Back.Transversal.Contract.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<ContentWithTargetPath Include="$(MSBuildThisFileDirectory)Setting/*.jsonc" CopyToOutputDirectory="PreserveNewest" TargetPath="Setting/%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ContentWithTargetPath Remove="Setting\Localhost.jsonc" />
+		<None Remove="Setting\nlog.config" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Setting\Localhost.jsonc" />
+		<None Remove="Setting\nlog.config" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<ApplicationDefinition Include="Setting\Localhost.jsonc">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</ApplicationDefinition>
+		<ApplicationDefinition Include="Setting\nlog.config">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</ApplicationDefinition>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Setting\Localhost.jsonc">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Setting\nlog.config">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Setting\Localhost.jsonc" />
+		<Resource Include="Setting\nlog.config" />
+	</ItemGroup>
+
+</Project>

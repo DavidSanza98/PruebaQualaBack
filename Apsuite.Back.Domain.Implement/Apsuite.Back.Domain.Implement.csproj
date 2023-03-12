@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="NLog" Version="5.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Apsuite.Back.Domain.Contract\Apsuite.Back.Domain.Contract.csproj" />
+    <ProjectReference Include="..\Apsuite.Back.Infrastructure.Contract\Apsuite.Back.Infrastructure.Contract.csproj" />
+  </ItemGroup>
+
+</Project>
